@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CD01652189A4C07002F5822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD01651189A4C07002F5822 /* Foundation.framework */; };
+		1CD01654189A4C07002F5822 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD01653189A4C07002F5822 /* CoreGraphics.framework */; };
+		1CD01656189A4C07002F5822 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD01655189A4C07002F5822 /* UIKit.framework */; };
+		1CD0165C189A4C07002F5822 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CD0165A189A4C07002F5822 /* InfoPlist.strings */; };
+		1CD0165E189A4C07002F5822 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD0165D189A4C07002F5822 /* main.m */; };
+		1CD01662189A4C07002F5822 /* NGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD01661189A4C07002F5822 /* NGAppDelegate.m */; };
+		1CD01665189A4C07002F5822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD01663189A4C07002F5822 /* Main.storyboard */; };
+		1CD01668189A4C07002F5822 /* NGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD01667189A4C07002F5822 /* NGViewController.m */; };
+		1CD0166A189A4C07002F5822 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD01669189A4C07002F5822 /* Images.xcassets */; };
+		1CD01671189A4C07002F5822 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD01670189A4C07002F5822 /* XCTest.framework */; };
+		1CD01672189A4C07002F5822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD01651189A4C07002F5822 /* Foundation.framework */; };
+		1CD01673189A4C07002F5822 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD01655189A4C07002F5822 /* UIKit.framework */; };
+		1CD0167B189A4C07002F5822 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CD01679189A4C07002F5822 /* InfoPlist.strings */; };
+		1CD0167D189A4C07002F5822 /* GeoCoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD0167C189A4C07002F5822 /* GeoCoderTests.m */; };
+		1CD0168E189A4C6E002F5822 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD0168D189A4C6E002F5822 /* CoreLocation.framework */; };
+		1CD01690189A4C79002F5822 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD0168F189A4C79002F5822 /* MapKit.framework */; };
+		1CD01694189A4D06002F5822 /* NGGeoCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD01693189A4D06002F5822 /* NGGeoCoder.m */; };
+		1CD01697189A4D22002F5822 /* NGGeoPlaceMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD01696189A4D22002F5822 /* NGGeoPlaceMark.m */; };
+		1CD0169D189A5D85002F5822 /* DefaultData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CD0169C189A5D85002F5822 /* DefaultData.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CD01674189A4C07002F5822 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CD01646189A4C07002F5822 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CD0164D189A4C07002F5822;
+			remoteInfo = GeoCoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CD0164E189A4C07002F5822 /* GeoCoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoCoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD01651189A4C07002F5822 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1CD01653189A4C07002F5822 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1CD01655189A4C07002F5822 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1CD01659189A4C07002F5822 /* GeoCoder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoCoder-Info.plist"; sourceTree = "<group>"; };
+		1CD0165B189A4C07002F5822 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CD0165D189A4C07002F5822 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CD0165F189A4C07002F5822 /* GeoCoder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeoCoder-Prefix.pch"; sourceTree = "<group>"; };
+		1CD01660189A4C07002F5822 /* NGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGAppDelegate.h; sourceTree = "<group>"; };
+		1CD01661189A4C07002F5822 /* NGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGAppDelegate.m; sourceTree = "<group>"; };
+		1CD01664189A4C07002F5822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CD01666189A4C07002F5822 /* NGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGViewController.h; sourceTree = "<group>"; };
+		1CD01667189A4C07002F5822 /* NGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGViewController.m; sourceTree = "<group>"; };
+		1CD01669189A4C07002F5822 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1CD0166F189A4C07002F5822 /* GeoCoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoCoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD01670189A4C07002F5822 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1CD01678189A4C07002F5822 /* GeoCoderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoCoderTests-Info.plist"; sourceTree = "<group>"; };
+		1CD0167A189A4C07002F5822 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CD0167C189A4C07002F5822 /* GeoCoderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoCoderTests.m; sourceTree = "<group>"; };
+		1CD0168D189A4C6E002F5822 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1CD0168F189A4C79002F5822 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1CD01692189A4D06002F5822 /* NGGeoCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGGeoCoder.h; sourceTree = "<group>"; };
+		1CD01693189A4D06002F5822 /* NGGeoCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGeoCoder.m; sourceTree = "<group>"; };
+		1CD01695189A4D22002F5822 /* NGGeoPlaceMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGGeoPlaceMark.h; sourceTree = "<group>"; };
+		1CD01696189A4D22002F5822 /* NGGeoPlaceMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGGeoPlaceMark.m; sourceTree = "<group>"; };
+		1CD01698189A4D94002F5822 /* NGEnumAndConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGEnumAndConstants.h; sourceTree = "<group>"; };
+		1CD0169C189A5D85002F5822 /* DefaultData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultData.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CD0164B189A4C07002F5822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD01690189A4C79002F5822 /* MapKit.framework in Frameworks */,
+				1CD0168E189A4C6E002F5822 /* CoreLocation.framework in Frameworks */,
+				1CD01654189A4C07002F5822 /* CoreGraphics.framework in Frameworks */,
+				1CD01656189A4C07002F5822 /* UIKit.framework in Frameworks */,
+				1CD01652189A4C07002F5822 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD0166C189A4C07002F5822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD01671189A4C07002F5822 /* XCTest.framework in Frameworks */,
+				1CD01673189A4C07002F5822 /* UIKit.framework in Frameworks */,
+				1CD01672189A4C07002F5822 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CD01645189A4C07002F5822 = {
+			isa = PBXGroup;
+			children = (
+				1CD01657189A4C07002F5822 /* GeoCoder */,
+				1CD01676189A4C07002F5822 /* GeoCoderTests */,
+				1CD01650189A4C07002F5822 /* Frameworks */,
+				1CD0164F189A4C07002F5822 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CD0164F189A4C07002F5822 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CD0164E189A4C07002F5822 /* GeoCoder.app */,
+				1CD0166F189A4C07002F5822 /* GeoCoderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CD01650189A4C07002F5822 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CD0168F189A4C79002F5822 /* MapKit.framework */,
+				1CD0168D189A4C6E002F5822 /* CoreLocation.framework */,
+				1CD01651189A4C07002F5822 /* Foundation.framework */,
+				1CD01653189A4C07002F5822 /* CoreGraphics.framework */,
+				1CD01655189A4C07002F5822 /* UIKit.framework */,
+				1CD01670189A4C07002F5822 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CD01657189A4C07002F5822 /* GeoCoder */ = {
+			isa = PBXGroup;
+			children = (
+				1CD01660189A4C07002F5822 /* NGAppDelegate.h */,
+				1CD01661189A4C07002F5822 /* NGAppDelegate.m */,
+				1CD01663189A4C07002F5822 /* Main.storyboard */,
+				1CD01666189A4C07002F5822 /* NGViewController.h */,
+				1CD01667189A4C07002F5822 /* NGViewController.m */,
+				1CD01669189A4C07002F5822 /* Images.xcassets */,
+				1CD01691189A4CE3002F5822 /* NGGeoCoderHandler */,
+				1CD01658189A4C07002F5822 /* Supporting Files */,
+			);
+			path = GeoCoder;
+			sourceTree = "<group>";
+		};
+		1CD01658189A4C07002F5822 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CD0169C189A5D85002F5822 /* DefaultData.plist */,
+				1CD01659189A4C07002F5822 /* GeoCoder-Info.plist */,
+				1CD0165A189A4C07002F5822 /* InfoPlist.strings */,
+				1CD0165D189A4C07002F5822 /* main.m */,
+				1CD0165F189A4C07002F5822 /* GeoCoder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CD01676189A4C07002F5822 /* GeoCoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CD0167C189A4C07002F5822 /* GeoCoderTests.m */,
+				1CD01677189A4C07002F5822 /* Supporting Files */,
+			);
+			path = GeoCoderTests;
+			sourceTree = "<group>";
+		};
+		1CD01677189A4C07002F5822 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CD01678189A4C07002F5822 /* GeoCoderTests-Info.plist */,
+				1CD01679189A4C07002F5822 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CD01691189A4CE3002F5822 /* NGGeoCoderHandler */ = {
+			isa = PBXGroup;
+			children = (
+				1CD01692189A4D06002F5822 /* NGGeoCoder.h */,
+				1CD01693189A4D06002F5822 /* NGGeoCoder.m */,
+				1CD01695189A4D22002F5822 /* NGGeoPlaceMark.h */,
+				1CD01696189A4D22002F5822 /* NGGeoPlaceMark.m */,
+				1CD01698189A4D94002F5822 /* NGEnumAndConstants.h */,
+			);
+			path = NGGeoCoderHandler;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CD0164D189A4C07002F5822 /* GeoCoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CD01680189A4C07002F5822 /* Build configuration list for PBXNativeTarget "GeoCoder" */;
+			buildPhases = (
+				1CD0164A189A4C07002F5822 /* Sources */,
+				1CD0164B189A4C07002F5822 /* Frameworks */,
+				1CD0164C189A4C07002F5822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoCoder;
+			productName = GeoCoder;
+			productReference = 1CD0164E189A4C07002F5822 /* GeoCoder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CD0166E189A4C07002F5822 /* GeoCoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CD01683189A4C07002F5822 /* Build configuration list for PBXNativeTarget "GeoCoderTests" */;
+			buildPhases = (
+				1CD0166B189A4C07002F5822 /* Sources */,
+				1CD0166C189A4C07002F5822 /* Frameworks */,
+				1CD0166D189A4C07002F5822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CD01675189A4C07002F5822 /* PBXTargetDependency */,
+			);
+			name = GeoCoderTests;
+			productName = GeoCoderTests;
+			productReference = 1CD0166F189A4C07002F5822 /* GeoCoderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CD01646189A4C07002F5822 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NG;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Nitin Gupta";
+				TargetAttributes = {
+					1CD0166E189A4C07002F5822 = {
+						TestTargetID = 1CD0164D189A4C07002F5822;
+					};
+				};
+			};
+			buildConfigurationList = 1CD01649189A4C07002F5822 /* Build configuration list for PBXProject "GeoCoder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CD01645189A4C07002F5822;
+			productRefGroup = 1CD0164F189A4C07002F5822 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CD0164D189A4C07002F5822 /* GeoCoder */,
+				1CD0166E189A4C07002F5822 /* GeoCoderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CD0164C189A4C07002F5822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD0166A189A4C07002F5822 /* Images.xcassets in Resources */,
+				1CD0165C189A4C07002F5822 /* InfoPlist.strings in Resources */,
+				1CD0169D189A5D85002F5822 /* DefaultData.plist in Resources */,
+				1CD01665189A4C07002F5822 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD0166D189A4C07002F5822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD0167B189A4C07002F5822 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CD0164A189A4C07002F5822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD01694189A4D06002F5822 /* NGGeoCoder.m in Sources */,
+				1CD01668189A4C07002F5822 /* NGViewController.m in Sources */,
+				1CD0165E189A4C07002F5822 /* main.m in Sources */,
+				1CD01662189A4C07002F5822 /* NGAppDelegate.m in Sources */,
+				1CD01697189A4D22002F5822 /* NGGeoPlaceMark.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD0166B189A4C07002F5822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD0167D189A4C07002F5822 /* GeoCoderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CD01675189A4C07002F5822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CD0164D189A4C07002F5822 /* GeoCoder */;
+			targetProxy = 1CD01674189A4C07002F5822 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CD0165A189A4C07002F5822 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CD0165B189A4C07002F5822 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1CD01663189A4C07002F5822 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CD01664189A4C07002F5822 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CD01679189A4C07002F5822 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CD0167A189A4C07002F5822 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CD0167E189A4C07002F5822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1CD0167F189A4C07002F5822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CD01681189A4C07002F5822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoCoder/GeoCoder-Prefix.pch";
+				INFOPLIST_FILE = "GeoCoder/GeoCoder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1CD01682189A4C07002F5822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoCoder/GeoCoder-Prefix.pch";
+				INFOPLIST_FILE = "GeoCoder/GeoCoder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1CD01684189A4C07002F5822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeoCoder.app/GeoCoder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoCoder/GeoCoder-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GeoCoderTests/GeoCoderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1CD01685189A4C07002F5822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeoCoder.app/GeoCoder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoCoder/GeoCoder-Prefix.pch";
+				INFOPLIST_FILE = "GeoCoderTests/GeoCoderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CD01649189A4C07002F5822 /* Build configuration list for PBXProject "GeoCoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD0167E189A4C07002F5822 /* Debug */,
+				1CD0167F189A4C07002F5822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CD01680189A4C07002F5822 /* Build configuration list for PBXNativeTarget "GeoCoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD01681189A4C07002F5822 /* Debug */,
+				1CD01682189A4C07002F5822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CD01683189A4C07002F5822 /* Build configuration list for PBXNativeTarget "GeoCoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD01684189A4C07002F5822 /* Debug */,
+				1CD01685189A4C07002F5822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CD01646189A4C07002F5822 /* Project object */;
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>888-555-5512</key>
+	<dict>
+		<key>address</key>
+		<dict>
+			<key>home</key>
+			<dict>
+				<key>City</key>
+				<string>Atlanta</string>
+				<key>Country</key>
+				<string>USA</string>
+				<key>CountryCode</key>
+				<string>us</string>
+				<key>State</key>
+				<string>GA</string>
+				<key>Street</key>
+				<string>1234 Laurel Street</string>
+				<key>ZIP</key>
+				<string>30303</string>
+			</dict>
+			<key>work</key>
+			<dict>
+				<key>City</key>
+				<string>Atlanta</string>
+				<key>Country</key>
+				<string>USA</string>
+				<key>CountryCode</key>
+				<string>ca</string>
+				<key>State</key>
+				<string>GA</string>
+				<key>Street</key>
+				<string>3494 Kuhl Avenue</string>
+				<key>ZIP</key>
+				<string>30303</string>
+			</dict>
+		</dict>
+		<key>emails</key>
+		<dict>
+			<key>work</key>
+			<string>John-Appleseed@mac.com</string>
+		</dict>
+		<key>firstName</key>
+		<string>John</string>
+		<key>lastName</key>
+		<string>Appleseed</string>
+		<key>organisation</key>
+		<string></string>
+		<key>phoneNumber</key>
+		<dict>
+			<key>home</key>
+			<string>888-555-1212</string>
+			<key>mobile</key>
+			<string>888-555-5512</string>
+		</dict>
+	</dict>
+	<key>(408) 555-5270</key>
+	<dict>
+		<key>address</key>
+		<dict>
+			<key>home</key>
+			<dict>
+				<key>City</key>
+				<string>Corte Madera</string>
+				<key>Country</key>
+				<string>USA</string>
+				<key>CountryCode</key>
+				<string>us</string>
+				<key>State</key>
+				<string>CA</string>
+				<key>Street</key>
+				<string>332 Laguna Street</string>
+				<key>ZIP</key>
+				<string>94925</string>
+			</dict>
+		</dict>
+		<key>emails</key>
+		<dict>
+			<key>home</key>
+			<string>d-higgins@mac.com</string>
+		</dict>
+		<key>firstName</key>
+		<string>Daniel</string>
+		<key>lastName</key>
+		<string>Higgins</string>
+		<key>organisation</key>
+		<string></string>
+		<key>phoneNumber</key>
+		<dict>
+			<key>home</key>
+			<string>555-478-7672</string>
+			<key>home fax</key>
+			<string>(408) 555-3514</string>
+			<key>mobile</key>
+			<string>(408) 555-5270</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

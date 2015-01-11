@@ -1,0 +1,20 @@
+NGGeoCoderHandler
+
+
+
+ It Could be Added to any project and for more detail find the sample code below.
+ Here we are using some default name and Addesss, i.e, randomaly picked and does'nt belongs to any real entitiy.
+ All address will request for Goe code, Once code is generated It Returns data with requested referance ID. 
+ @param _anID could be any thing, In case its not required we could keep it as nil as well.
+
+ Getting Revese => Address to GeoCode .
+ @param _anID is Set for referncing respective Contact Adddress. Might be single contact have multiple type Address (Home, Office, Other).
+ @param _anID could be nill as well,majorly based on requirements.
+ 
+- (NSString *)addressFromGeocodeLocation:(CLLocationCoordinate2D)location andID:(NSString *)_anID ;
+
+ Getting => GeoCode from Address.
+ @param _anID is Set for referncing respective Contact Adddress. Might be single contact have multiple type Address (Home, Office, Other).
+ @param _anID could be nill as well,majorly based on requirements.
+ 
+- (void)geocodeFromAddressString:(NSString *)_address andID:(NSString *)_anID ;
